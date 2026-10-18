@@ -2,13 +2,13 @@ import fotoPerfil from '../assets/cr7Programador.jpg';
 
 export const portafolioData = {
   personal: {
-    nombre: "Amaro Romero",
+    nombre: "AMARO ROMERO INFANTE",
     titulo: "Analista Programador Computacional",
     institucion: "Duoc UC Sede Maipú",
     descripcion: "Estudiante de Analista Programador Computacional en Duoc UC Sede Maipú. Aprendiendo desarrollo de software Front-End, la construcción de interfaces interactivas y la resolución de problemas mediante código limpio y eficiente.",
     avatar: fotoPerfil,
     email: "amar.romero@duocuc.cl",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/amaro-romero-infante-760b26444/", 
     github: "https://github.com/Amaro-Romero"
   },
   experiencia: [
@@ -16,8 +16,8 @@ export const portafolioData = {
       id: 1,
       cargo: "Desarrollador Front-End Trainee",
       empresa: "Proyectos Académicos y Personales",
-      periodo: "2024 - Presente",
-      descripcion: "Construcción de aplicaciones web interactivas SPA utilizando React, Ant Design y arquitectura Atomic Design."
+      periodo: "2025 - Presente",
+      descripcion: "Experiencia en diversos proyectos académicos para tiendas utilizando JSX, HTML, CSS, JavaScript, React, Ant Design y arquitectura Atomic Design."
     }
   ],
   estudios: [
@@ -25,21 +25,19 @@ export const portafolioData = {
       id: 1,
       institucion: "Duoc UC Sede Maipú",
       titulo: "Analista Programador Computacional",
-      periodo: "2023 - Presente"
+      periodo: "2025 - Presente"
     }
   ],
   proyectos: [
     {
       id: 1,
       nombre: "TECNOFIT",
-      descripcion: "Plataforma web interactiva con registro, login y validaciones de correo de dominio Duoc UC.",
-      link: "https://github.com/Amaro-Romero/Tecnofit"
+      descripcion: "Proyecto desarrollado para una tienda de deportes que cuenta con registro, login, validaciones y página de inicio (home)."
     },
     {
       id: 2,
       nombre: "BLACKOUT",
-      descripcion: "Aplicación web interactiva desarrollada para gestión y control con interfaz limpia y reactiva.",
-      link: "https://github.com/Amaro-Romero/Blackout"
+      descripcion: "Plataforma para una empresa de telonería enfocada en la venta y cotización de telones por metro."
     }
   ]
 };

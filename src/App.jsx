@@ -3,6 +3,8 @@ import { Layout } from 'antd';
 import { portafolioData } from './data/portafolioData';
 import { Navbar } from './components/organisms/Navbar';
 import { CardPerfil } from './components/organisms/CardPerfil';
+import { ExperienciaSeccion, EstudiosSeccion } from './components/organisms/ExperienciaSeccion';
+import { ProyectosSeccion } from './components/organisms/ProyectosSeccion';
 import { ContactoSeccion } from './components/organisms/ContactoSeccion';
 import { Footer } from './components/organisms/Footer';
 
@@ -14,6 +16,9 @@ function App() {
       <Navbar />
       <Content>
         <CardPerfil personal={portafolioData.personal} />
+        <ExperienciaSeccion experiencia={portafolioData.experiencia} />
+        <EstudiosSeccion estudios={portafolioData.estudios} />
+        <ProyectosSeccion proyectos={portafolioData.proyectos} />
         <ContactoSeccion />
       </Content>
       <Footer />
