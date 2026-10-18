@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Row, Col, Typography, Button, Avatar } from 'antd';
-import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 export const CardPerfil = ({ personal }) => {
   return (
@@ -15,13 +15,19 @@ export const CardPerfil = ({ personal }) => {
           <Col xs={24} md={16}>
             <Title level={2}>{personal.nombre}</Title>
             <Title level={4} type="secondary">{personal.titulo}</Title>
+            <Text type="secondary" style={{ display: 'block', marginBottom: '12px', fontWeight: 'bold' }}>
+              {personal.institucion}
+            </Text>
             <Paragraph style={{ fontSize: '16px' }}>{personal.descripcion}</Paragraph>
-            <div style={{ display: 'flex', gap: '12px' }}>
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
               <Button type="primary" icon={<LinkedinOutlined />} href={personal.linkedin} target="_blank" size="large">
                 LinkedIn
               </Button>
               <Button icon={<GithubOutlined />} href={personal.github} target="_blank" size="large">
                 GitHub
+              </Button>
+              <Button type="default" danger icon={<MailOutlined />} href={`mailto:${personal.email}`} size="large">
+                {personal.email}
               </Button>
             </div>
           </Col>
