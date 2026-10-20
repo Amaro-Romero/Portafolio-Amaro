@@ -8,7 +8,7 @@ export const portafolioData = {
     descripcion: "Estudiante de Analista Programador Computacional en Duoc UC Sede Maipú. Aprendiendo desarrollo de software Front-End, la construcción de interfaces interactivas y la resolución de problemas mediante código limpio y eficiente.",
     avatar: fotoPerfil,
     email: "amar.romero@duocuc.cl",
-    linkedin: "https://www.linkedin.com/in/amaro-romero-infante-760b26444/", 
+    linkedin: "https://www.linkedin.com/in/amaro-romero-infante",
     github: "https://github.com/Amaro-Romero"
   },
   experiencia: [
@@ -18,6 +18,20 @@ export const portafolioData = {
       empresa: "Proyectos Académicos y Personales",
       periodo: "2025 - Presente",
       descripcion: "Experiencia en diversos proyectos académicos para tiendas utilizando JSX, HTML, CSS, JavaScript, React, Ant Design y arquitectura Atomic Design."
+    },
+    {
+      id: 2,
+      cargo: "Desarrollador Front-End",
+      empresa: "TECNOFIT",
+      periodo: "2025",
+      descripcion: "Desarrollo de plataforma web para tienda de deportes que incluye autenticación de usuarios (registro y login), validaciones de formularios y página de inicio interactiva."
+    },
+    {
+      id: 3,
+      cargo: "Desarrollador Back-End",
+      empresa: "BLACKOUT",
+      periodo: "2025",
+      descripcion: "Desarrollo de sitio web para empresa de telonería con sistema de cotización en línea por metro y catálogo de productos."
     }
   ],
   estudios: [
@@ -26,18 +40,6 @@ export const portafolioData = {
       institucion: "Duoc UC Sede Maipú",
       titulo: "Analista Programador Computacional",
       periodo: "2025 - Presente"
-    }
-  ],
-  proyectos: [
-    {
-      id: 1,
-      nombre: "TECNOFIT",
-      descripcion: "Proyecto desarrollado para una tienda de deportes que cuenta con registro, login, validaciones y página de inicio (home)."
-    },
-    {
-      id: 2,
-      nombre: "BLACKOUT",
-      descripcion: "Plataforma para una empresa de telonería enfocada en la venta y cotización de telones por metro."
     }
   ]
 };

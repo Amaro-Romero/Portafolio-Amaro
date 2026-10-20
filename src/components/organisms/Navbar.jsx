@@ -8,7 +8,6 @@ export const Navbar = () => {
     { label: <a href="#personal">Sobre Mí</a>, key: 'personal' },
     { label: <a href="#experiencia">Experiencia</a>, key: 'experiencia' },
     { label: <a href="#estudios">Estudios</a>, key: 'estudios' },
-    { label: <a href="#proyectos">Proyectos</a>, key: 'proyectos' },
     { label: <a href="#contacto">Contacto</a>, key: 'contacto' },
   ];
 
@@ -17,13 +16,7 @@ export const Navbar = () => {
       <div style={{ color: '#52c41a', fontSize: '20px', fontWeight: 'bold', marginRight: '40px' }}>
         Portafolio
       </div>
-      <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: '#52c41a', // Cambia el selector activo del menú a verde
-          },
-        }}
-      >
+      <ConfigProvider theme={{ token: { colorPrimary: '#52c41a' } }}>
         <Menu
           theme="dark"
           mode="horizontal"
